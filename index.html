@@ -1,118 +1,219 @@
-# OVION Automation Single File Website
-
-Copy ALL the code below and paste it into your `index.html` file on GitHub.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OVION Automation</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html{
+      scroll-behavior:smooth;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800 font-sans">
 
-  <!-- Navbar -->
-  <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div>
-        <h1 class="text-2xl font-bold">OVION Automation</h1>
-        <p class="text-sm text-blue-200">Smart Automation for Smart Industries</p>
-      </div>
+  <!-- Header -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
 
-      <nav class="hidden md:flex gap-6">
-        <a href="#about" class="hover:text-yellow-300">About</a>
-        <a href="#services" class="hover:text-yellow-300">Services</a>
-        <a href="#industries" class="hover:text-yellow-300">Industries</a>
-        <a href="#contact" class="hover:text-yellow-300">Contact</a>
-      </nav>
+    <div class="bg-blue-900 text-white py-3 px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <div>
+          <h1 class="text-3xl font-bold tracking-wide">
+            OVION <span class="text-orange-400">Automation</span>
+          </h1>
+
+          <p class="text-blue-200 text-sm">
+            Smart Automation for Smart Industries
+          </p>
+        </div>
+
+        <div class="text-sm text-center md:text-right">
+          <p>📞 +91 8830021250</p>
+          <p>📞 +91 9371225055</p>
+          <p>📧 ovionautomation@gmail.com</p>
+        </div>
+
+      </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-center gap-8 font-semibold text-gray-700">
+
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#services" class="hover:text-blue-700">Services</a>
+        <a href="#industries" class="hover:text-blue-700">Industries</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+
+      </div>
+    </nav>
+
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-24 px-6 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-5xl font-bold mb-6">Smart Industrial Automation Solutions</h2>
-      <p class="text-lg leading-relaxed text-blue-100 mb-8">
-        OVION Automation delivers smart industrial automation solutions for modern process industries.
-        We specialize in PLC, SCADA, HMI, and complete control system integration that improves productivity,
-        reliability, and efficiency.
-      </p>
+  <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-28 px-6">
 
-      <a href="#contact" class="bg-white text-blue-700 px-8 py-4 rounded-2xl font-bold shadow-lg hover:bg-yellow-300 transition duration-300">
-        Contact Us
-      </a>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+
+        <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          SMART AUTOMATION
+          <span class="text-orange-400 block mt-2">
+            STRONGER FUTURE
+          </span>
+        </h2>
+
+        <p class="text-lg text-blue-100 leading-relaxed mb-8">
+          OVION Automation delivers advanced PLC, SCADA, HMI and Industrial Automation solutions that improve productivity, efficiency and reliability for modern process industries.
+        </p>
+
+        <div class="flex gap-4 flex-wrap">
+
+          <a href="#services"
+          class="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl font-bold shadow-lg">
+            Our Services
+          </a>
+
+          <a href="#contact"
+          class="border border-white hover:bg-white hover:text-blue-800 transition px-8 py-4 rounded-2xl font-bold">
+            Contact Us
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side -->
+      <div>
+
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl">
+
+          <div class="grid grid-cols-2 gap-6 text-center">
+
+            <div class="bg-white/10 rounded-2xl p-6">
+              <h3 class="text-3xl font-bold">PLC</h3>
+              <p class="text-blue-100 mt-2">Programming</p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl p-6">
+              <h3 class="text-3xl font-bold">SCADA</h3>
+              <p class="text-blue-100 mt-2">Systems</p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl p-6">
+              <h3 class="text-3xl font-bold">HMI</h3>
+              <p class="text-blue-100 mt-2">Visualization</p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl p-6">
+              <h3 class="text-3xl font-bold">PCS7</h3>
+              <p class="text-blue-100 mt-2">Integration</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+
   </section>
 
   <!-- About -->
   <section id="about" class="py-20 px-6 bg-white">
+
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8 text-blue-800">About OVION Automation</h2>
+
+      <h2 class="text-4xl font-bold mb-8 text-blue-800">
+        About OVION Automation
+      </h2>
 
       <p class="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
         OVION Automation is an Industrial Automation & Control Systems company providing end-to-end automation solutions for process industries.
-        Founded by an experienced Automation Engineer with hands-on project experience in pharmaceutical, food & beverage,
-        and distillery plants, the company focuses on building reliable, scalable, and compliant automation systems.
+        Founded by an experienced Automation Engineer with hands-on project experience in pharmaceutical, food & beverage and distillery plants.
       </p>
 
       <div class="grid md:grid-cols-2 gap-8 mt-14">
+
         <div class="bg-gray-100 p-8 rounded-3xl shadow-md">
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Vision</h3>
+
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">
+            Vision
+          </h3>
+
           <p>
-            To become a trusted automation partner for industries by delivering innovative and reliable automation solutions.
+            To become a trusted automation partner by delivering innovative and reliable automation solutions.
           </p>
+
         </div>
 
         <div class="bg-gray-100 p-8 rounded-3xl shadow-md">
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Mission</h3>
+
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">
+            Mission
+          </h3>
+
           <ul class="space-y-2 list-disc text-left pl-5">
             <li>Deliver high-quality automation systems</li>
             <li>Improve plant efficiency and reliability</li>
-            <li>Provide cost-effective scalable solutions</li>
+            <li>Provide scalable solutions</li>
             <li>Build long-term customer relationships</li>
           </ul>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- Services -->
   <section id="services" class="py-20 px-6 bg-gray-50">
+
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-14 text-blue-800">Our Services</h2>
+
+      <h2 class="text-4xl font-bold text-center mb-14 text-blue-800">
+        Our Services
+      </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
           <h3 class="text-2xl font-bold text-blue-700 mb-4">PLC Programming</h3>
           <ul class="list-disc pl-5 space-y-2">
             <li>Siemens PLC Programming</li>
-            <li>Batch & Continuous Automation</li>
-            <li>Safety Logic & Recipe Handling</li>
+            <li>Batch Automation</li>
+            <li>Safety Logic</li>
           </ul>
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
           <h3 class="text-2xl font-bold text-blue-700 mb-4">SCADA & HMI</h3>
           <ul class="list-disc pl-5 space-y-2">
-            <li>WinCC & Unified HMI</li>
+            <li>WinCC Development</li>
             <li>Alarms & Trends</li>
             <li>Custom Dashboards</li>
           </ul>
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
           <h3 class="text-2xl font-bold text-blue-700 mb-4">System Integration</h3>
           <ul class="list-disc pl-5 space-y-2">
             <li>IO Mapping</li>
             <li>Panel Integration</li>
-            <li>Control Philosophy</li>
+            <li>Field Devices</li>
           </ul>
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
           <h3 class="text-2xl font-bold text-blue-700 mb-4">Industrial Communication</h3>
           <ul class="list-disc pl-5 space-y-2">
             <li>Profinet</li>
@@ -121,63 +222,75 @@ Copy ALL the code below and paste it into your `index.html` file on GitHub.
           </ul>
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
           <h3 class="text-2xl font-bold text-blue-700 mb-4">Database & Reports</h3>
           <ul class="list-disc pl-5 space-y-2">
             <li>SQL Server Setup</li>
             <li>Batch Reports</li>
-            <li>Automated Reporting</li>
+            <li>Automated Reports</li>
           </ul>
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-lg">
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Commissioning & Support</h3>
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Support & AMC</h3>
           <ul class="list-disc pl-5 space-y-2">
             <li>FAT & SAT</li>
-            <li>Site Commissioning</li>
+            <li>Commissioning</li>
             <li>Troubleshooting</li>
           </ul>
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- Industries -->
   <section id="industries" class="py-20 px-6 bg-white">
+
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-14 text-blue-800">Industries We Serve</h2>
+
+      <h2 class="text-4xl font-bold text-center mb-14 text-blue-800">
+        Industries We Serve
+      </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         <div class="bg-gray-100 p-6 rounded-3xl shadow-md">
           <h3 class="text-xl font-bold text-blue-700 mb-4">Pharmaceutical</h3>
-          <p>Batch Automation, CIP/SIP Systems, 21 CFR Compliance</p>
+          <p>Batch Automation, CIP/SIP Systems & Compliance</p>
         </div>
 
         <div class="bg-gray-100 p-6 rounded-3xl shadow-md">
           <h3 class="text-xl font-bold text-blue-700 mb-4">Food & Beverage</h3>
-          <p>Mixing, Heating, Cooling & Recipe Systems</p>
+          <p>Mixing, Heating & Cooling Automation</p>
         </div>
 
         <div class="bg-gray-100 p-6 rounded-3xl shadow-md">
-          <h3 class="text-xl font-bold text-blue-700 mb-4">Distillery & Boiler</h3>
+          <h3 class="text-xl font-bold text-blue-700 mb-4">Distillery</h3>
           <p>DCS / PCS7 & Utility Integration</p>
         </div>
 
         <div class="bg-gray-100 p-6 rounded-3xl shadow-md">
           <h3 class="text-xl font-bold text-blue-700 mb-4">Water Systems</h3>
-          <p>Water Treatment Automation & Monitoring</p>
+          <p>Water Treatment & Monitoring Systems</p>
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-blue-800 text-white py-20 px-6 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+  <section id="contact" class="bg-blue-900 text-white py-20 px-6">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-4xl font-bold mb-6">
+        Contact Us
+      </h2>
 
       <p class="text-lg text-blue-100 mb-10">
         Available for new automation projects, troubleshooting and AMC support.
@@ -185,45 +298,76 @@ Copy ALL the code below and paste it into your `index.html` file on GitHub.
 
       <div class="grid md:grid-cols-3 gap-8">
 
-        <div class="bg-white/10 p-6 rounded-3xl">
+        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-md">
           <h3 class="text-xl font-bold mb-3">Location</h3>
           <p>Pune / Maharashtra</p>
         </div>
 
-        <div class="bg-white/10 p-6 rounded-3xl">
+        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-md">
           <h3 class="text-xl font-bold mb-3">Phone</h3>
+
           <p>+91 8830021250</p>
+          <p class="mt-2">+91 9371225055</p>
         </div>
 
-        <div class="bg-white/10 p-6 rounded-3xl">
+        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-md">
           <h3 class="text-xl font-bold mb-3">Email</h3>
           <p>ovionautomation@gmail.com</p>
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-10 text-center px-6">
-    <h3 class="text-2xl font-bold text-white mb-4">OVION Automation</h3>
 
-    <p class="max-w-3xl mx-auto leading-relaxed">
-      OVION Automation provides PLC, SCADA, HMI and industrial automation solutions for pharmaceutical,
-      food & beverage and process industries.
+    <h3 class="text-3xl font-bold text-white mb-2">
+      OVION Automation
+    </h3>
+
+    <p class="text-orange-400 mb-4 font-semibold">
+      Smart Automation for Smart Industries
     </p>
 
-    <p class="mt-6 text-gray-500">© 2026 OVION Automation. All Rights Reserved.</p>
+    <p class="max-w-3xl mx-auto leading-relaxed">
+      OVION Automation provides PLC, SCADA, HMI and industrial automation solutions
+      for pharmaceutical, food & beverage and process industries.
+    </p>
+
+    <div class="mt-6">
+      <p>📞 +91 8830021250</p>
+      <p>📞 +91 9371225055</p>
+      <p>📧 ovionautomation@gmail.com</p>
+    </div>
+
+    <p class="mt-6 text-gray-500">
+      © 2026 OVION Automation. All Rights Reserved.
+    </p>
+
   </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918830021250"
+  target="_blank"
+  style="
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 22px;
+  border-radius:50px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  z-index:1000;
+  ">
+    💬 WhatsApp
+  </a>
 
 </body>
 </html>
-```
-
-After pasting:
-
-1. Click `Commit changes`
-2. Open Vercel
-3. Import your GitHub repository
-4. Click Deploy
-5. Your website will become live automatically
